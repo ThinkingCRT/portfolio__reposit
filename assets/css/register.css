@@ -1,0 +1,55 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 150px auto 0 auto;
+  justify-content: center;
+  align-content: center;
+  font-family: Roboto;
+  color: white;
+}
+.form .lable .pass {
+  margin-top: 15px;
+}
+.form .form__input {
+  margin: 10px 0;
+  padding: 12px;
+  border: unset;
+  border: 2px solid #00e0d0;
+  outline: none;
+}
+.form .form__submit {
+  transition: color 0.15s linear;
+  transition: background-color 0.15s linear;
+}
+.form .form__submit:hover {
+  background-color: #00e0d0;
+  color: white;
+}
+.form .form__text {
+  margin: 10px 0 0 0;
+}
+.form .form__text .form__auth {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: color 0.15s linear;
+}
+.form .form__text .form__auth:hover {
+  color: #00e0d0;
+}
+.form .form__massege {
+  line-height: 2em;
+  margin: 40px auto 0 auto;
+  border: 1px solid #00e0d0;
+  color: #00e0d0;
+  border-radius: 10px;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 600;
+  width: 340px;
+}

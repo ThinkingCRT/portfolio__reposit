@@ -1,0 +1,70 @@
+$color__blue: #00e0d0;
+$margin__logo: 35px;
+$color__p: #413d4b;
+$mt_item_digit: 80px;
+
+.wrapper {
+   font-family: Roboto sans-serif;
+   font-size: 14px;
+   font-weight: 300;
+   overflow-x: hidden;
+}
+
+.container {
+   width: 100%;
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   line-height: 1.6em;
+}
+
+%button {
+   font-size: 16px;
+   font-weight: 900;
+   text-transform: uppercase;
+   color: $color__blue;
+   text-decoration: none;
+   border: 2px solid $color__blue;
+   border-radius: 1px;
+   width: 140px;
+   padding: 15px;
+   transition: background .15s linear, color .15s linear;
+
+   &:hover {
+      background: $color__blue;
+      color: white;
+   }
+}
+
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+
+@mixin text-ez($fs, $fw, $ttr, $col) {
+   font-size: $fs;
+   font-weight: $fw;
+   text-transform: $ttr;
+   color: $col;
+}
+
+%digit__item {
+   text-align: center;
+   @include text-ez(14px, 300, none, $color__p);
+}
+
+%digit_border_botton {
+   border-bottom: 1px solid rgb(203, 203, 203);
+   padding-bottom: 50px;
+}
+
+%form__button {
+   background-color: white;
+   border: 1px solid $color__blue;
+   @include text-ez(14px, 300, uppercase, $color__blue);
+
+}
